@@ -23,12 +23,12 @@ with:
 
 # Restaurar dependências
 - name: Restore dependencies
-run: dotnet restore github4women.csproj
+run: dotnet restore github4women/github4women.csproj
 
 # Build do projeto
 - name: Build the project
-run: dotnet build github4women.csproj --no-restore --configuration Release
+run: dotnet build github4women/github4women.csproj --no-restore --configuration Release
 
 # Executar testes (opcional)
 - name: Run tests
-run: dotnet test github4women.csproj --no-build --verbosity normal
+run: dotnet test github4women/github4women.csproj --no-build --verbosity normal
